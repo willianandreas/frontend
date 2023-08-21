@@ -19,7 +19,7 @@ function App() {
         '8VIqMCXyYG1t3O001q07nl2BOHOwU5dx',
       ];
 
-      const searchTerms = ['dog', 'rat', 'cat', 'house', 'tree']; // Termos de pesquisa
+      const searchTerms = ['dog', 'rat', 'cat', 'house', 'tree'];
 
       const imagesFromApi = [];
 
@@ -31,8 +31,8 @@ function App() {
             {
               params: {
                 api_key: apiKey,
-                q: searchTerm, // Termo de pesquisa para buscar stickers relacionados a cachorros
-                limit: 450, // Defina o número de imagens que deseja buscar por cada termo
+                q: searchTerm,
+                limit: 10,
               },
             }
           );
@@ -53,7 +53,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Giphy Trending By Will Andreas</h1>
+        <h1>Giphy Trending By <br></br>Willian Andreas</h1>
         <div className="image-container">
           {images.map((image) => (
             <img
