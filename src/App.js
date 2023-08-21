@@ -32,7 +32,7 @@ function App() {
               params: {
                 api_key: apiKey,
                 q: searchTerm,
-                limit: 10,
+                limit: 2,
               },
             }
           );
